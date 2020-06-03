@@ -1,0 +1,14 @@
+<div *ngIf="movie" class="details">
+    <h3>Ban da chon phim: {{movie.name}}. Chi tiet:</h3>
+    <table style="width: 100%;">
+        <tr>
+            <td>Ten:</td>
+            <td><input [(ngModel)]="movie.name" placeholder="Ten phim"></td>
+        </tr>
+        <tr>
+            <td>Nam phat hanh:</td>
+            <td><input [(ngModel)]="movie.releaseYear" placeholder="Nam phat hanh"></td>
+        </tr>
+    </table>
+    <button (click)="goBack()">Back</button>
+</div>

@@ -1,0 +1,38 @@
+<h2>Danh sach phim</h2>
+<div class="parent">
+    <ol class="movies">
+        <li class="movieListItem" *ngFor="let eachMovie of movies">
+            <a routerLink="/detail/{{eachMovie.id}}" style="text-decoration: none;">
+                {{eachMovie.name}} - {{eachMovie.releaseYear}}
+            </a>
+        </li>
+    </ol>
+    <!-- <app-movie-detail [movie]="selectedMovie"></app-movie-detail> -->
+</div>
+
+
+
+
+
+
+<!-- <li class="movieListItem" *ngFor="let eachMovie of movies" 
+            [class.selected]="eachMovie===selectedMovie"
+            (click)="onSelected(eachMovie)">
+            {{eachMovie.name}} - {{eachMovie.releaseYear}}
+        </li> -->
+
+<!-- <h1>Chi tiet phim:</h1>
+<div><span>id:</span>{{movie.id}}</div>
+<div><span>name:</span>{{movie.name}}</div>
+<div><span>releaseYear:</span>{{movie.releaseYear}}</div>
+<h2>Chinh sua thong tin:</h2>
+<div style="margin: 10px; text-align: left;">
+    <label>Movie name (one way):
+        <input [ngModel]="movie.name" placeholder="Nhap ten phim">
+    </label>
+</div>
+<div style="margin: 10px; text-align: left;">
+    <label>Movie name (two way):
+        <input [(ngModel)]="movie.name" placeholder="Nhap ten phim">
+    </label>
+</div> -->
